@@ -1,5 +1,4 @@
 import streamlit as st 
-from streamlit import caching
 import pyautogui
 
 #Necessary NLP Packaages 
@@ -47,7 +46,7 @@ def main():
     st.title("Ex-stream-ly NLP Web App") 
     with st.expander("About the application",expanded=False):
      st.write("""
-        This is an application that can summarize your long passages into just few sentences.
+        This is an application that integrates two use case applications of Natural Language Processing (NLP) that are the summarization of long passages into just few sentences and then detection of the sentiment in the text.
      """)
     
     #Getting the text from the user
@@ -84,7 +83,6 @@ def main():
     with st.container():  
         if st.button("Refresh Page"):
             pyautogui.hotkey("ctrl","F5")
-            st.balloons()
            # st.legacy_caching.clear_cache()
            
            
