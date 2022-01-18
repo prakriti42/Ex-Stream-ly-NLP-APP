@@ -80,9 +80,9 @@ def main():
     st.sidebar.info("Happy Streamlit-ing!")
 
    
-    with st.container():  
-        if st.button("Refresh Page"):
-            pyautogui.hotkey("ctrl","F5")
+    # with st.container():  
+    #     if st.button("Refresh Page"):
+    #         pyautogui.hotkey("ctrl","F5")
            # st.legacy_caching.clear_cache()
            
            
